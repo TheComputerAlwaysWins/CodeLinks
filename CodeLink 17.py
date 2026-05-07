@@ -3,7 +3,7 @@
 #
 # CodeLink 17
 # Imitation
-# last revised 4/28/26
+# last revised 5/6/26
 
 # There are countless ways to build an imitation engine using the ideas from
 # Chapter Ten. I suggest starting with something simple that is easy to debug,
@@ -15,6 +15,7 @@
 # In that same spirit, use simple sample text at first.  Once your code is working,
 # then you can bring Taylor Swift and William Shakespeare into the mix.
 #
+
 
 import random
 
@@ -73,14 +74,24 @@ trainedChain = []
 # when debugging, start with 4, and then think about whether to move to 1 or 2 or even 10
 
 chainLength = int(input("How long do you want the chain? "))
+print("")
 trainedChain = makeChain(sample, chainLength)
 
-print("Made chain!")
+print ("Here's the chain I created.")
+for counter in range(len(trainedChain)):
+    print(trainedChain[counter])
+
+print ("")
 print()
 
+# choose a starting phrase
+startingPhrase = trainedChain[0][0]
+    
 # we are now ready to generate some text
-# the second argument below is just the first 'chainLength' number of characters from the original sample
-talk(trainedChain, sample[:chainLength], chainLength)
+print ("Now, let's talk.")
+print ("")
+talk(trainedChain, startingPhrase, chainLength)
+print("")
 print(" ... Enough.")
 
 print()
