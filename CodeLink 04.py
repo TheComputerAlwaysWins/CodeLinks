@@ -3,7 +3,7 @@
 #
 # CodeLink 4
 # Eight Queens
-# last revised 6/25/25
+# last revised 5/6/26
 
 # Using backtracking, can you find the 92 solutions to Eight Queens?
 # You will need to write your own recursive function to replace the
@@ -109,6 +109,15 @@ def playRandomly (board):
 
 # main program
 # ############
+
+# Note that the board variable defined below has an extra row.
+# I use positions board[0][0] through board[7][7],
+# but I do not use board[8][0] through board [8][7].
+# When you revise the code, feel free to use those extra spaces if you
+# want to keep track of additional debug information about the game board.
+# You also can just ignore them if you don't want to use them.
+
+board[8].
 
 board = [
     [0, 0, 0, 0, 0, 0, 0, 0],
