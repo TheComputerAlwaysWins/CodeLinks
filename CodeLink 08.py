@@ -221,9 +221,6 @@ print()
 print("Let's play Connect Four.")
 print()
 
-# ask for a depth limit
-# depth = int(input("What maximum depth? "))
-
 while gameOver == False:
 
     printBoard(board)
