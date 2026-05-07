@@ -3,7 +3,7 @@
 #
 # CodeLink 13
 # Aim-the-Darts Blackjack
-# last revised 12/25/24
+# last revised 5/6/26
 #
 # This code starts by playing just a few games, showing you the cards
 # so that you can evaluate the computer's decisions.  After that, the
@@ -474,12 +474,9 @@ for samples in range(sampleGames):
         print ("  Dealer won.")
     print ("")
 
-    temp = input ("Hit ENTER to see the next sample game.")
-
-# then, initialize the variables for the big run of 1000 games
+# then, initialize the variables for the big run of sample games
 print ("")
-print ("Now, let me simulate 1000 games for you.")
-print ("")
+print ("Now, let me simulate %d games for you." % gamesTotal)
 
 # the baseline variables
 computerWins = 0
